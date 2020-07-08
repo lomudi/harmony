@@ -6,7 +6,7 @@ int speakerOutX = 12;
 int sliderInX = A0;
 
 int speakerOutY = 13;
-int sliderInY = A5;
+int sliderInY = A2;
 
 int DEBUG = 1;
 
@@ -16,16 +16,18 @@ Tone tone2;
 int toneX = 0;
 int toneY = 0;
 
-bool soundIsOn = false;
+int volume = 255;
+
+bool soundIsOn = true;
 
 // Motors params ==========================================
-int m_pwm_X = 11;
-int m_in_1_X = 5;
-int m_in_2_X = 2;
+int m_pwm_X = 10;
+int m_in_1_X = 7;
+int m_in_2_X = 6;
 
-int m_pwm_Y = 3;
-int m_in_1_Y = 6;
-int m_in_2_Y = 9;
+int m_pwm_Y = 9;
+int m_in_1_Y = 4;
+int m_in_2_Y = 5;
 
 // Arduino lifecycle =================================================
 void setup()
